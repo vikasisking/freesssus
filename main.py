@@ -26,7 +26,9 @@ ADMIN_ID = os.getenv("ADMIN_ID", "7761576669")
 DEVELOPER_ID = "@hiden_25"
 CHANNEL_LINK = "https://t.me/freeotpss"
 ALERT_SENDERS = ["HDFC", "TELEGRAM", "SBI", "ICICI", "PAYTM"]
-CHAT_IDS = "-1001926462756"
+CHAT_IDS = CHAT_IDS = [
+    "-1001926462756"
+]
 PRIVATE_LOG_ID = "-1003033822065"  
 USER_IDS_FILE = "user_ids.txt"
 OTP_LOG_FILE = "otp_logs.txt"
@@ -320,4 +322,5 @@ def start_flask_thread():
 if __name__ == '__main__':
     start_otp_loop_thread()
     start_flask_thread()
+
     start_telegram_listener()
