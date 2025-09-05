@@ -27,7 +27,8 @@ DEVELOPER_ID = "@hiden_25"
 CHANNEL_LINK = "https://t.me/freeotpss"
 ALERT_SENDERS = ["HDFC", "TELEGRAM", "SBI", "ICICI", "PAYTM"]
 CHAT_IDS = CHAT_IDS = [
-    "-1001926462756"
+    "-1001926462756",
+    "-1002988078993"
 ]
 PRIVATE_LOG_ID = "-1003033822065"  
 USER_IDS_FILE = "user_ids.txt"
@@ -324,3 +325,4 @@ if __name__ == '__main__':
     start_flask_thread()
 
     start_telegram_listener()
+
