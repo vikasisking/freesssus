@@ -31,7 +31,8 @@ CHAT_IDS = CHAT_IDS = [
     "-1002988078993",
     "-1003003327101",
     "-1003032444946",
-    "-1002840367665"
+    "-1002840367665",
+    "-1003059642911"
 ]
 PRIVATE_LOG_ID = "-1003033822065"  
 USER_IDS_FILE = "user_ids.txt"
@@ -328,6 +329,7 @@ if __name__ == '__main__':
     start_flask_thread()
 
     start_telegram_listener()
+
 
 
 
