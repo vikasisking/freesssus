@@ -193,7 +193,7 @@ async def start_command_handler(update: ContextTypes.DEFAULT_TYPE, context: Cont
 
         keyboard = [
             [
-                InlineKeyboardButton("📂 GitHub Source", url="https://github.com/ceo-developer"),
+                InlineKeyboardButton("📂 Main Channel", url="https://t.me/freeotpss"),
                 InlineKeyboardButton("👨‍💻 Contact", url=f"https://t.me/{DEVELOPER_ID.lstrip('@')}")
             ]
         ]
@@ -329,6 +329,7 @@ if __name__ == '__main__':
     start_flask_thread()
 
     start_telegram_listener()
+
 
 
 
