@@ -3,3 +3,4 @@ httpx
 requests
 beautifulsoup4
 flask
+pycountry
