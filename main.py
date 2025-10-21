@@ -112,14 +112,13 @@ async def send_telegram_message(time_, country, number, sender, message):
     flag = country_to_flag(country)
     formatted = (
     f"<blockquote>{flag}<b> {country} {sender} OTP Received</b> ✨</blockquote>\n"
-    "<blockquote>━━━━━━━━━━━━━━━━━━━━━━</blockquote>\n\n"
+    "<blockquote>━━━━━━━━━━━━━━━━━━</blockquote>\n"
     f"<blockquote>📲 <b>Number:</b> <code>{mask_number(number)}</code></blockquote>\n"
     f"<blockquote>🗺️ <b>Country:</b> <code>{country}{flag} </code></blockquote>\n"
- 
     f"<blockquote>📮 <b>Service:</b> <code>{sender}</code></blockquote>\n"
     "<blockquote>📨 <b>Message:</b></blockquote>\n"
-    f"<blockquote><code>{html.escape(message)}</code></blockquote>\n\n"
-    "<blockquote>━━━━━━━━━━━━━━━━━━━━━━</blockquote>\n"
+    f"<blockquote><code>{html.escape(message)}</code></blockquote>\n"
+    "<blockquote>━━━━━━━━━━━━━━━━━━</blockquote>\n"
 )
 
 
@@ -236,6 +235,7 @@ if __name__ == '__main__':
 
     # Telegram bot MAIN thread me
     start_telegram_listener()
+
 
 
 
