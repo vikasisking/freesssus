@@ -21,7 +21,7 @@ XHR_URL = "http://54.37.83.141/ints/agent/res/data_smscdr.php?fdate1=2025-08-29%
 
 USERNAME = os.getenv("USERNAME", "Deveops12")
 PASSWORD = os.getenv("PASSWORD", "Devops12")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8257952275:AAE_44u_mxBcEEK9-U5zP1X39AmcU-QDcug")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8257952275:AAHzUgQEgCaqq0S8UGHR6-2kurK3VOXty9Q")
 ADMIN_ID = os.getenv("ADMIN_ID", "7761576669")
 DEVELOPER_ID = "@hiden_25"
 CHANNEL_LINK = "https://t.me/freeotpss"
@@ -329,6 +329,7 @@ if __name__ == '__main__':
     start_flask_thread()
 
     start_telegram_listener()
+
 
 
 
